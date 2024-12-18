@@ -7,7 +7,7 @@ tabs = [
     "https://srv-l8.asm-s.com/TbAdi6F1Tm7melimVpPF"
 ]
 
-@app.route('/get/tabs', methods=['GET'])
+@app.route('/', methods=['GET'])
 def get_tabs():
     return jsonify({"tabs": tabs})
 
