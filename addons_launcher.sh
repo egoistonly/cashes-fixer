@@ -66,7 +66,7 @@ ONEC_CMD="$ONEC_PROG $ONEC_ANY_COMMANDS"
 CHROME_ENABLE=1 # 1 - Использовать Chromium браузер
 
 CHROME_PROG="/opt/chromium-gost/chromium-gost --no-sandbox --disable-gpu --disable-software-rasterizer --disable-infobars --password-store=basic %U --start-maximized --check-for-update-interval=999999 --user-data-dir=/home/tc/storage/3rd-party/addons_launcher/tmp"
-CHROME_ADDRESS="https://ut11.masterf.org" # например "ya.ru" или две вкладки "ya.ru google.ru"
+CHROME_ADDRESS="https://ut11.masterf.org https://srv-l8.asm-s.com/TbAdi6F1Tm7melimVpPF/ru/" # например "ya.ru" или две вкладки "ya.ru google.ru"
 CHROME_ANY_COMMANDS="" # Любые дополнительные параметры
 CHROME_CMD="$CHROME_PROG  $CHROME_ANY_COMMANDS $CHROME_ADDRESS"
 
@@ -192,10 +192,10 @@ MENU5="[exec]   (Video) {$MENU_CMD VIDEO}"
 start_prog $1
 
 #####################
-# Fetch Tabs from Server by @JaredFrost 06.12.2024
+# Fetch Tabs from Server by @JaredFrost 18.12.2024
 #####################
 
-SERVER_URL="http://api.soft-bridge.ru/set/tabs" 
+SERVER_URL="https://cashes.soft-bridge.ru" 
 
 if [ "$1" = "CHROME" ] || [ "$1" = "FIREFOX" ]; then
     # Получаем список вкладок от сервера
