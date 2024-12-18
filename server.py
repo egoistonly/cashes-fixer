@@ -5,7 +5,7 @@ app = Flask(__name__)
 # Список вкладок
 tabs = [
     "https://ut11.masterf.org",
-    "https://srv-l8.asm-s.com/TbAdi6F1Tm7melimVpPF"
+    "https://srv-l8.asm-s.com/TbAdi6F1Tm7melimVpPF/ru"
 ]
 
 @app.route('/', methods=['GET'])
